@@ -1,0 +1,42 @@
+# Bytecode and compiled files
+*.class
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs and outputs
+*.log
+*.out
+*.csv
+*.tmp
+*.bak
+*.swp
+
+# Java tooling
+*.jar
+*.war
+*.ear
+
+# Python environments
+.env
+.venv/
+env/
+venv/
+
+# IDE and editor folders
+.idea/
+.vscode/
+*.iml
+
+# Java files
+.java
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output folders
+data/rosetta_code_grouped/
+data/rosetta_code_flat/
+data/rosetta_java_task_index.csv
+data/code_results_compiles.csv
