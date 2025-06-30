@@ -9,7 +9,7 @@ This repository contains the replication package for our study on estimating pow
 - **Java 17**  
 - **Python 3.10.5**  
 - JVM energy profiler: [JoularJX](https://www.noureddine.org/research/joular/joularjx)  
-- Java perforamnce profiler: [async-profiler](https://github.com/async-profiler/async-profiler)
+- Java performance profiler: [async-profiler](https://github.com/async-profiler/async-profiler)
 - Python dependencies listed in `requirements.txt`
 
 ### Installation
