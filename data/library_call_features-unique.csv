@@ -1,0 +1,17 @@
+﻿Packages,Category,Description
+java.util,Collections,"for collections framework, utility classes"
+java.lang.Thread,Concurrency ,for thread creation and management
+java.lang.Runnable,Concurrency ,for thread creation and management
+java.util.concurrent,Concurrency ,for advanced concurrent programming utilities
+java.io,io,"for basic file I/O, streams, and readers/writers"
+java.nio,io,"for buffers, channels, and selectors"
+java.nio.channels,io,for scalable I/O operations via channels
+java.nio.file,io,for advanced file system operations
+java.nio.charset,io,for character set encodings
+java.net,io,for network I/O
+javax.net.ssl,io,for secure network I/O
+java.lang,os,for system properties and environment variables
+java.lang.management,os,for JVM management and monitoring
+java.util.regex,string processing,for regular expression processing
+java.text,string processing,for text formatting and parsing
+java.math,math,for arbitrary-precision arithmetic with BigInteger and BigDecimal

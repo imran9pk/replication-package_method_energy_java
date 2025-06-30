@@ -1,0 +1,50 @@
+task,included,url,N_small,N_large,N_medium,command_line
+binarytrees_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-javavm-2.html,7,21,14,/opt/src/jdk-23/bin/java -cp . binarytrees
+binarytrees_v3,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-javavm-3.html,7,21,14,/opt/src/jdk-23/bin/java -cp . binarytrees
+binarytrees_v4,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-javavm-4.html,7,21,14,/opt/src/jdk-23/bin/java -cp . binarytrees
+binarytrees_v6,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-javavm-6.html,7,21,14,/opt/src/jdk-23/bin/java -cp . binarytrees
+binarytrees_v7,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/binarytrees-javavm-7.html,7,21,14,/opt/src/jdk-23/bin/java -cp . binarytrees
+fannkuchredux_v1,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-javavm-1.html,10,12,11,/opt/src/jdk-23/bin/java -cp . fannkuchredux
+fannkuchredux_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-javavm-2.html,10,12,11,/opt/src/jdk-23/bin/java -cp . fannkuchredux
+fannkuchredux_v3,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-javavm-3.html,10,12,11,/opt/src/jdk-23/bin/java -cp . fannkuchredux
+fannkuchredux_v8,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fannkuchredux-javavm-8.html,10,12,11,/opt/src/jdk-23/bin/java -cp . fannkuchredux
+fasta_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-javavm-2.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp . fasta
+fasta_v4,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-javavm-4.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp . fasta
+fasta_v5,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-javavm-5.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp . fasta
+fasta_v6,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-javavm-6.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp . fasta
+fasta_v8,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/fasta-javavm-8.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp . fasta
+knucleotide_v1,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-1.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+knucleotide_v3,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-3.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+knucleotide_v4,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-4.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+knucleotide_v5,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-5.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+knucleotide_v6,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-6.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+knucleotide_v8,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/knucleotide-javavm-8.html,250000,25000000,12625000,/opt/src/jdk-23/bin/java -cp .:/opt/src/java-libs/fastutil-8.3.1.jar knucleotide
+mandelbrot_v1,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-1.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+mandelbrot_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-2.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+mandelbrot_v3,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-3.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+mandelbrot_v4,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-4.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+mandelbrot_v6,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-6.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+mandelbrot_v8,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/mandelbrot-javavm-8.html,1000,16000,8500,/opt/src/jdk-23/bin/java -cp . mandelbrot
+nbody_v1,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-1.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+nbody_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-2.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+nbody_v3,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-3.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+nbody_v4,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-4.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+nbody_v5,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-5.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+nbody_v8,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/nbody-javavm-8.html,500000,50000000,25250000,/opt/src/jdk-23/bin/java -cp . nbody
+pidigits_v1,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-javavm-1.html,2000,10000,6000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -Djava.library.path=Include/java -cp . pidigits
+pidigits_v2,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-javavm-2.html,2000,10000,6000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -Djava.library.path=Include/java -cp . pidigits
+pidigits_v3,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-javavm-3.html,2000,10000,6000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -Djava.library.path=Include/java -cp . pidigits
+pidigits_v4,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/pidigits-javavm-4.html,2000,10000,6000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -Djava.library.path=Include/java -cp . pidigits
+regexredux_v1,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-javavm-1.html,50000,5000000,2525000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -cp . regexredux
+regexredux_v2,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-javavm-2.html,50000,5000000,2525000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -cp . regexredux
+regexredux_v3,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-javavm-3.html,50000,5000000,2525000,/opt/src/jdk-23/bin/java -cp . regexredux
+regexredux_v6,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/regexredux-javavm-6.html,50000,5000000,2525000,/opt/src/jdk-23/bin/java --enable-native-access=ALL-UNNAMED -cp . regexredux
+revcomp_v3,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-javavm-3.html,250000,100000001,50125000,/opt/src/jdk-23/bin/java -Xmx3072m -cp . revcomp
+revcomp_v4,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-javavm-4.html,250000,100000001,50125000,/opt/src/jdk-23/bin/java -Xmx3072m -cp . revcomp
+revcomp_v5,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-javavm-5.html,250000,100000001,50125000,/opt/src/jdk-23/bin/java -Xmx3072m -cp . revcomp
+revcomp_v6,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-javavm-6.html,250000,100000001,50125000,/opt/src/jdk-23/bin/java -Xmx3072m -cp . revcomp
+revcomp_v7,FALSE,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/revcomp-javavm-7.html,250000,250000,250000,/opt/src/jdk-23/bin/java -Xmx3072m -cp . revcomp
+spectralnorm_v1,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-javavm-1.html,500,5500,3000,/opt/src/jdk-23/bin/java -cp . spectralnorm
+spectralnorm_v2,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-javavm-2.html,500,5500,3000,/opt/src/jdk-23/bin/java -cp . spectralnorm
+spectralnorm_v3,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-javavm-3.html,500,5500,3000,/opt/src/jdk-23/bin/java -cp . spectralnorm
+spectralnorm_v8,,https://benchmarksgame-team.pages.debian.net/benchmarksgame/program/spectralnorm-javavm-8.html,500,5500,3000,/opt/src/jdk-23/bin/java -cp . spectralnorm
