@@ -1,0 +1,17 @@
+Packages,Category,Description,ClassesCount,Classes
+java.util,Collections,"for collections framework, utility classes",58,"IntSupplier,IntStream,IntConsumer,Arrays,NavigableSet,LinkedHashSet,LinkedList,Deque,StringTokenizer,LongSupplier,BitSet,Queue,Base64,BiFunction,Function,SimpleEntry,Formatter,Objects,DoubleUnaryOperator,GregorianCalendar,Set,TreeMap,PriorityQueue,Predicate,BiConsumer,Random,Date,TreeSet,List,UnaryOperator,HashMap,AbstractMap,Optional,TimeZone,Map,Collectors,Calendar,HashSet,ArrayDeque,Stream,OptionalInt,ArrayList,LongStream,DoubleSupplier,LinkedHashMap,Supplier,IntToDoubleFunction,Collections,IntPredicate,Consumer,Stack,Collection,Iterator,Locale,IntUnaryOperator,ListIterator,Comparator,Vector"
+java.lang.Thread,Concurrency ,for thread creation and management,0,
+java.lang.Runnable,Concurrency ,for thread creation and management,0,
+java.util.concurrent,Concurrency ,for advanced concurrent programming utilities,13,"CyclicBarrier,CountDownLatch,ThreadLocalRandom,ExecutionException,ConcurrentHashMap,TimeUnit,Executors,AtomicInteger,ExecutorService,ArrayBlockingQueue,CompletableFuture,AtomicReference,BlockingQueue"
+java.io,io,"for basic file I/O, streams, and readers/writers",16,"StringWriter,ObjectOutputStream,File,Serializable,InputStream,StringReader,UnsupportedEncodingException,FileOutputStream,OutputStream,FileWriter,ByteArrayOutputStream,ByteArrayInputStream,BufferedWriter,PrintStream,ObjectInputStream,IOException"
+java.nio,io,"for buffers, channels, and selectors",2,"ByteBuffer,ByteOrder"
+java.nio.channels,io,for scalable I/O operations via channels,1,FileChannel
+java.nio.file,io,for advanced file system operations,5,"Files,Paths,BasicFileAttributes,Path,StandardOpenOption"
+java.nio.charset,io,for character set encodings,2,"StandardCharsets,Charset"
+java.net,io,for network I/O,12,"PasswordAuthentication,URISyntaxException,BodyHandlers,Authenticator,HttpClient,Inet4Address,InetAddress,HttpRequest,UnknownHostException,HttpResponse,Inet6Address,ServerSocket"
+javax.net.ssl,io,for secure network I/O,0,
+java.lang,os,for system properties and environment variables,6,"Field,Method,InvocationTargetException,String,System,Math"
+java.lang.management,os,for JVM management and monitoring,2,"ThreadMXBean,ManagementFactory"
+java.util.regex,string processing,for regular expression processing,2,"Matcher,Pattern"
+java.text,string processing,for text formatting and parsing,8,"BreakIterator,MessageFormat,DecimalFormat,NumberFormat,SimpleDateFormat,DateFormat,ParseException,DateFormatSymbols"
+java.math,math,for arbitrary-precision arithmetic with BigInteger and BigDecimal,4,"BigDecimal,BigInteger,RoundingMode,MathContext"

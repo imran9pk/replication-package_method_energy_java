@@ -174,7 +174,7 @@ def process_files(code_download_dir, log_csv):
     # Write log CSV
     with open(log_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["file_path", "task_name", "dropped", "reason", "final_filename", "class_name"])
+        writer.writerow(["file_path", "task", "dropped", "reason", "final_filename", "class_name"])
         writer.writerows(log_rows)
 
     print("\nSUMMARY")

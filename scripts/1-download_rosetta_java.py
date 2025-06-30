@@ -64,7 +64,7 @@ def build_csv_from_tasks(task_names, out_csv):
     # Write to CSV
     with open(out_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["task_name", "normalized_path", "github_api_url", "java_file_name", "java_raw_url", "available"])
+        writer.writerow(["task", "normalized_path", "github_api_url", "java_file_name", "java_raw_url", "available"])
         writer.writerows(row_data)
 
     # Summary pf the results
