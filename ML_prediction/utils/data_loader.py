@@ -2,7 +2,7 @@ import pandas as pd
 
 def load_energy_dataset(path):
     df = pd.read_csv(path)
-    df_clean = df.dropna(subset=["energy", "execution_time"])
+    df_clean = df.dropna(subset=["energy(joules)", "execution_time(ms)"])
 
     drop_cols = ['url', 'N_small', 'N_medium', 'N_large', 'command_line',
                  'methodCallNames', 'internalCallsList', 'externalCallsList',

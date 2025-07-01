@@ -1,2 +1,3 @@
 dataset_name,rfecv,autospearman,hyperparameters,features,sampling,model_name,MAE,RMSE,R2
-methods_dataset.csv,True,False,False,19,None,DT,1534.3695173299498,3747.192502195824,0.9720522127282408
+methods_dataset.csv,TRUE,FALSE,FALSE,19,kfold,DT,4732.872571,12759.29431,0.697775189
+methods_dataset.csv,TRUE,FALSE,FALSE,19,None,DT,1534.369517,3747.192502,0.972052213

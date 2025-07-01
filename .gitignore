@@ -27,15 +27,11 @@ venv/
 .vscode/
 *.iml
 
-# Java files
-.java
-
 # OS files
 .DS_Store
 Thumbs.db
 
 # Output folders
+data/clbg_code_notCompileable/
 data/rosetta_code_grouped/
-data/rosetta_code_flat/
-data/rosetta_java_task_index.csv
-data/code_results_compiles.csv
+
