@@ -1,2 +1,0 @@
-model,max_depth,min_samples_leaf,min_samples_split
-DT,20,1,2
