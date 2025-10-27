@@ -2,14 +2,11 @@ import sys, runpy
 
 sys.path.insert(0, ".")  # PYTHONPATH=.
 scripts = [
-    "business/runner_kFold_default.py",
-    "business/runner_kFold_KBest_10.py",
-    "business/runner_kFold_KBest_20.py",
-    "business/runner_kFold_KBest_30.py",
-    "business/runner_kFold_lowVarianceDrop.py",
-    "business/runner_kFold_noExecutionTime.py",
-    "business/runner_kFold_RFECV.py",
-    "business/runner_kFold_autoSpearman.py"
+    "business/runner_kFold_withHyper_autoSpearman.py",
+    "business/runner_kFold_withHyper_default.py",
+    "business/runner_kFold_withHyper_KBest_30.py",
+    "business/runner_kFold_withHyper_lowVarianceDrop.py",
+
 ]
 
 
