@@ -1,4 +1,4 @@
-# Replication Package for Estimating Method-Level Energy Usage in Java Benchmarks from Static Code Features
+# Replication Package for Method-Level Energy Prediction in Java Using Code Features and Execution Time
 
 This repository contains the replication package for our study on estimating power consumption of Java methods using static code features. It includes all necessary scripts and setup required to replicate our experiments.
 
