@@ -59,7 +59,27 @@ PYTHONPATH=. python3 run_modelswithHyperParameters.py
 Best parameters are preloaded into corresponding files in the models/ folder.
 
 ## 4. Visualizations and Result Analysis
-All visual analysis notebooks are located in ```visulizations/```.
+Post-modeling aggregation steps can be executed using the following script:
+
+```bash
+PYTHONPATH=. python3 run_postModeling.py
+```
+This script runs the full post-analysis pipeline from inside the business/ directory:
+
+- ```business/2_summary5Folds.py``` – Aggregates all 5-fold evaluation results and generates per-config summary CSVs.
+
+- ```business/4_combineCSVs.py``` – Combines all summaries and raw results into two master files:
+
+    -results5Fold_summary_combined.csv
+
+    -results5Fold_all_combined.csv
+
+- ```business/5_pick_top_5_configs.py``` – Identifies the top-5 configurations based on bias–variance trade-off and saves them.
+
+- ```business/3_plotsAggregate5Folds.py``` – Generates fold-wise visual grid plots (box plots) for each model and configuration.
+
+Then all visual analysis notebooks are located in ```visulizations/```.
+
 
 ## 5. Output and Results
 
