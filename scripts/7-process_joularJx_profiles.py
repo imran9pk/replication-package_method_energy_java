@@ -18,7 +18,7 @@ def collect_method_csvs_from_joularJx_Logs(source_root: Path, dest_dir: Path):
     for timestamped_dir in source_root.iterdir():
         if not timestamped_dir.is_dir():
             continue
-        methods_dir = timestamped_dir / 'all' / 'total' / 'methods'
+        methods_dir = timestamped_dir / 'app' / 'total' / 'methods'
         if methods_dir.exists() and methods_dir.is_dir():
             total_dirs += 1
             csv_files = list(methods_dir.glob('*.csv'))
@@ -58,6 +58,9 @@ def process_all_energy_dfs(combined_df):
     combined_df["Method_name"] = combined_df["Method_name"].str.replace(r'\$', '.', regex=True)
 
     grouped_df = combined_df.groupby("Method_name", as_index=False).mean()
+
+    # from the Method names remove "s2subjects."
+    grouped_df["Method_name"] = grouped_df["Method_name"].str.replace(r'^s2subjects\.', '', regex=True)
 
     return grouped_df
 
@@ -115,12 +118,12 @@ if __name__ == "__main__":
     root_dir = Path.cwd().parent
     outputs_dir = root_dir / "outputs"
     data_dir = root_dir / "data"
-    joular_jx_results = outputs_dir / "joularjx-result"
+    joular_jx_results = data_dir / "experiment_energy" / "joularjx-result_20iter"
     methods_energy_dir = outputs_dir / "methods_energy_csvs"
 
     combined_energy_csv  = outputs_dir / "combined_energy.csv"
     energy_output_path = outputs_dir / "methods_energy_csvs"
-    methods_dataset_csv = data_dir / "method_static_metrics_temp.csv"
+    methods_dataset_csv = data_dir / "method_static_metrics_All.csv"
 
     print("Starting energy CSVs processing...")
     collect_method_csvs_from_joularJx_Logs(joular_jx_results, methods_energy_dir)

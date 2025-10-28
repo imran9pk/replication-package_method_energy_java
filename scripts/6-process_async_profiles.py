@@ -68,9 +68,7 @@ def process_method_times(clean_method_lines, class_name):
     for line in clean_method_lines:
         stack, time_str = line.rsplit(" ", 1)
         time_ns = int(time_str)
-        print(f"Time in ns: {time_ns}")
         time_ms = time_ns / 1000000  # Convert to milliseconds
-        print(f"Time in ms: {time_ms}")
         methods = stack.split(";")
         for method in methods:
             method_times[method] = method_times.get(method, 0) + time_ms
@@ -78,6 +76,8 @@ def process_method_times(clean_method_lines, class_name):
     #create a df from the method_times dictionary
     cols = ["Method_name", "execution_time(ms)"]
     df = pd.DataFrame(method_times.items(), columns=cols)
+    # from the Method names remove "s2subjects."
+    df["Method_name"] = df["Method_name"].str.replace(r'^s2subjects\.', '', regex=True)
     df.insert(0, "task", class_name)  # Insert the task name as the first column  
     return df
 
@@ -129,11 +129,11 @@ if __name__ == "__main__":
     root_dir = Path.cwd().parent
     outputs_dir = root_dir / "outputs"
     data_dir = root_dir / "data"
-    async_profiles_dir = outputs_dir / "outputs" 
+    async_profiles_dir = data_dir / "experiment_energy" / "outputs_20iter" 
     collapsed_csv_dir = outputs_dir / "methods_perf_data"
 
     combined_perf_csv = outputs_dir / "combined_perf.csv"
-    methods_dataset_csv = data_dir / "method_static_metrics_temp.csv"
+    methods_dataset_csv = data_dir / "method_static_metrics_All.csv"
 
     # Collect all collapsed files from the async profiles directory
     collect_method_csvs_from_async_Logs(async_profiles_dir, collapsed_csv_dir)
@@ -154,6 +154,8 @@ if __name__ == "__main__":
         all_dfs.append(method_times_df)
     
     all_times_dfs = pd.concat(all_dfs, ignore_index=True)
+    # from the Method names remove "s2subjects."
+    all_times_dfs["Method_name"] = all_times_dfs["Method_name"].str.replace(r'^s2subjects\.', '', regex=True)
     all_times_dfs.to_csv(combined_perf_csv, index=False)
 
     read_and_update_main_dataset(combined_perf_csv, methods_dataset_csv)
